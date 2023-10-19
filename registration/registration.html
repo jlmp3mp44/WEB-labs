@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesRegistration.css">
+  <title>Реєстрація</title>
+</head>
+<body>
+<header>
+  <img src="D:\WEB LABS\lab4\images\icon.png" alt="Logo"/>
+  <nav>
+    <ul>
+      <li><a href="../main.html">Головна</a></li>
+      <li><a href="../table/table.html">Рецепти</a></li>
+      <li><a href="#">Меню</a></li>
+      <li><a href="../FaQ/FaQ.html">Про нас</a></li>
+      <li><a href="../Contacts\contacts.html">Контакти</a></li>
+      <li><a href="../login/login.html">Вхід</a></li>
+      <li><a href="../registration/registration.html">Реєстрація</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="registration-container">
+  <h1>Реєстрація</h1>
+  <form class="registration-form" action="register.php" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Прізвище:</label>
+      <input type="text" id="lastname" name="lastname" required>
+    </div>
+    <div class="form-group">
+      <label for="firstname">Ім'я:</label>
+      <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <div class="form-group">
+      <label for="middlename">По батькові:</label>
+      <input type="text" id="middlename" name="middlename" required>
+    </div>
+    <div class="form-group">
+      <label for="birthdate">Дата народження:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+    <div class="form-group">
+      <label for="group">Група:</label>
+      <select id="group" name="group" required>
+        <option value="group1">IA-21</option>
+        <option value="group2">IA-22</option>
+        <option value="group3">IA-23</option>
+        <option value="group3">IA-24</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="file">Завантажити файл:</label>
+      <input type="file" id="file" name="file" accept=".pdf, .doc, .docx" required>
+    </div>
+    <button type="submit">Зареєструватися</button>
+  </form>
+</div>
+</body>
+</html>

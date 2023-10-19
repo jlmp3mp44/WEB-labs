@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Розрахунок прямокутника</title>
+  <link rel="stylesheet" type="text/css" href="stylesJS.css">
+</head>
+<body>
+
+
+<h1>Розрахунок прямокутника</h1>
+<div>
+  <label for="length">Довжина:</label>
+  <input type="text" id="length">
+</div>
+<div>
+  <label for="width">Ширина:</label>
+  <input type="text" id="width">
+</div>
+<div>
+  <p>Периметр: <span id="perimeter">0</span></p>
+  <p>Площа: <span id="area">0</span></p>
+  <p>Довжина діагоналі: <span id="diagonal">0</span></p>
+</div>
+
+
+
+<<h1>Чат</h1>
+<div id="user1-container" class="user-container">
+  <h2>Користувач 1</h2>
+  <input type="text" id="user1-input" placeholder="Введіть повідомлення">
+</div>
+<div id="user2-container" class="user-container">
+  <h2>Користувач 2</h2>
+  <input type="text" id="user2-input" placeholder="Введіть повідомлення">
+</div>
+<div id="chat-container">
+  <div id="chat-messages"></div>
+</div>
+
+
+
+
+<h1>Транслітерація українського тексту</h1>
+<div class="input-container">
+  <label for="ukrainian-text">Український текст:</label>
+  <input type="text" id="ukrainian-text">
+</div>
+<div class="input-container">
+  <label for="latin-text">Транслітерований текст:</label>
+  <input type="text" id="latin-text" readonly>
+</div>
+
+
+
+
+<h1>Визначення дня тижня народження</h1>
+<div class="input-container">
+  <label for="birth-date">Дата народження:</label>
+  <input type="date" id="birth-date">
+</div>
+<button id="calculate-button">Визначити день тижня</button>
+<div id="result"></div>
+
+
+
+
+<script src="js.js"></script>
+</body>
+</html>

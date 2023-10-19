@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="stylesLogin.css">
+  <title>Авторизація</title>
+</head>
+<body>
+<header>
+  <img src="D:\WEB LABS\lab4\images\icon.png" alt="Logo"/>
+  <nav>
+    <ul>
+      <li><a href="../main.html">Головна</a></li>
+      <li><a href="../table/table.html">Рецепти</a></li>
+      <li><a href="#">Меню</a></li>
+      <li><a href="../FaQ/FaQ.html">Про нас</a></li>
+      <li><a href="../Contacts\contacts.html">Контакти</a></li>
+      <li><a href="../login/login.html">Вхід</a></li>
+      <li><a href="../registration/registration.html">Реєстрація</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="login-container">
+  <h1>Авторизація</h1>
+  <form class="login-form" action="login.php" method="post">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">Увійти</button>
+  </form>
+</div>
+</body>
+</html>
+

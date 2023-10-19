@@ -1,186 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>First lab</title>
-    <style>
-        .header{
-            width: 1000px;
-            background-color: rgba(52, 152, 219, 0);
-            border: 2px solid #2980b9;
-            margin: 10px auto;
-            display: flex;
-            margin: 50px
-            align-items: center;
-        }
-        .footer{
-            width: 1000px;
-            height: 150px;
-            background-color: #333;
-            color: #fff;
-            border: 2px solid #2980b9;
-            margin: 10px auto;
-            clear: both;
-            display: flex;
-            justify-content: space-between;
-        }
-        .img{
-        text-align: left;
-        }
-        .menu{
-        text-align: right;
-        }
-
-        .menu-column {
-            flex: 1; /* Розширюємо кожну колонку на однаковий обсяг простору */
-            text-align: center;
-        }
-
-        .menu-column h3 {
-            margin-top: 0;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-        .sidebar{
-            width: 300px;
-            height: 400px;
-            background-color: rgba(52, 152, 219, 0);
-            border: 2px solid #2980b9;
-            margin: 10px auto;
-            float: left;
-            margin-left: +255px;
-        }
-        .content{
-            width: 700px;
-            height: 400px;
-            background-color: rgba(52, 152, 219, 0);
-            border: 2px solid #2980b9;
-            margin: 10px auto;
-            float: left;
-            margin-left: +10px;
-        }
-        .sidebar-links {
-            list-style: none;
-            padding: 10px; /* Відступи всередині блоку */
-            margin: 10px; /* Зовнішні відступи блоку */
-            border: 1px solid #ccc; /* Границя для списку посилань */
-        }
-
-        .sidebar-links li {
-            text-align: left; /* Вирівнювання тексту по лівому краю */
-            margin-bottom: 8px; /* Відступ між пунктами списку */
-        }
-
-        .sidebar-links li a {
-            text-decoration: none;
-            color: #333; /* Колір тексту посилань */
-            font-weight: bold;
-            display: block; /* Робимо посилання блоковими для більшого натиску */
-            transition: color 0.3s; /* Зміна кольору тексту при наведенні триває 0.3 секунди */
-        }
-
-        /* Змінюємо колір посилання при наведенні */
-        .sidebar-links li a:hover {
-            color: #2980b9;
-        }
-
-         .image-container {
-            width: 30%; /* Розмір контейнера для зображення (по два в рядку) */
-            float: left;
-            padding: 0px; /* Відступи внутрішнього контейнера */
-            box-sizing: border-box; /* Розрахунок padding включається в ширину */
-            text-align: center;
-        }
-
-        .image-container img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px; /* Округлі кути для зображення */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тінь для зображення */
-            transition: transform 0.3s; /* Зміна масштабу при наведенні триває 0.3 секунди */
-        }
-
-        /* Збільшуємо зображення при наведенні */
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
-
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Recipes</title>
 </head>
 <body>
-<div class="header">
-    <div class="img">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4m2b4hpdfu9OZw-6lPoym6r2SoAvwVA8JWg&usqp=CAU"
-             alt="Logotype">
-    </div>
-    <ul class="menu">
-        <li><a href="#">Point 1</a></li>
-        <li><a href="#">Point 2</a></li>
-        <li><a href="#">Point 3</a></li>
-        <li><a href="#">Point 4</a></li>
-    </ul>
-</div>
-<div class = "sidebar">
-    <ul class="sidebar-links">
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Успішність</a></li>
-        <li><a href="#">Контакти</a></li>
-        <li><a href="#">FAQ</a></li>
-    </ul>
-</div>
-<div class = "content">
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747612.jpg" alt="Зображення 1">
-    </div>
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747616.jpg" alt="Зображення 2">
-    </div>
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747619.jpg" alt="Зображення 3">
-    </div>
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747621.jpg" alt="Зображення 4">
-    </div>
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747624.jpg" alt="Зображення 5">
-    </div>
-    <div class="image-container">
-        <img src="http://cdn.goodhouse.com.ua/images-jpg/17476/1747632.jpg" alt="Зображення 6">
-    </div>
-</div>
-<div class="footer">
-    <div class="menu-column">
-        <h3>Monday</h3>
+<header>
+    <img src="D:\WEB LABS\lab4\images\icon.png" alt="Logo"/>
+    <nav>
         <ul>
-            <li>WEB development</li>
-            <li>Electronica</li>
-            <li>Philosophy</li>
+            <li><a href = "js.html"> JS</a></li>
+            <li><a href="/main">Головна</a></li>
+            <li><a href="table/table.html">Рецепти</a></li>
+            <li><a href="#">Меню</a></li>
+            <li><a href="FaQ/FaQ.html">Про нас</a></li>
+            <li><a href="Contacts\contacts.html">Контакти</a></li>
+            <li><a href="login/login.html">Вхід</a></li>
+            <li><a href="registration/registration.html">Реєстрація</a></li>
         </ul>
+    </nav>
+</header>
+<div class="content">
+    <div class="text">THE BEST RECIPES</div>
+    <div class="main">
+        <h1>Ласкаво просимо до CRM для кулінарних майстрів</h1>
+        <p>В нашій CRM ви зможете легко керувати рецептами та меню вашого ресторану чи кулінарного бізнесу.
+            Ми пропонуємо зручні інструменти для створення, редагування та організації рецептів, планування меню
+            на тиждень чи сезон, а також ведення обліку інгредієнтів та їх запасів.</p>
+        <a href="FaQ/FaQ.html" class="cta-button">Дізнатися більше</a>
     </div>
-    <div class="menu-column">
-        <h3>TUESDAY</h3>
-        <ul>
-            <li>English</li>
-            <li>Mathematics</li>
-            <li>Psihology</li>
-        </ul>
+    <div class="news">
+        <h2>Останні новини</h2>
+        <article>
+            <h3>Нова функція: Інтеграція з популярними кулінарними блогами</h3>
+            <p>Ми раді повідомити вам про важливе оновлення. Тепер ми інтегрували можливість
+                підключення до популярних кулінарних блогів, щоб ви могли отримувати актуальні
+                рецепти та ідеї безпосередньо у вашому обліковому записі. Це дозволить вам заощадити
+                час на пошуку нових інспірацій та рецептів та легко інтегрувати їх у ваше меню.</p>
+            <a href="#">Читати далі</a>
+        </article>
+        <article>
+            <h3>Відкриття нового розділу: Сезонні рецепти</h3>
+            <p>Ми завжди працюємо над розвитком нашого сайту, і зараз ми з радістю оголошуємо відкриття нового розділу
+                "Сезонні рецепти". Тут ви знайдете найсмачніші та найактуальніші страви, які відповідають поточному сезону
+                та погоді. Цей розділ допоможе вам підтримувати меню в актуальному стані та задовольняти смаки вашого
+                клієнтського аудиторії.</p>
+            <a href="#">Читати далі</a>
+        </article>
     </div>
-    <div class="menu-column">
-        <h3>Wednseday</h3>
-        <ul>
-            <li>Data science</li>
-            <li>Comp science</li>
-            <li>English</li>
-        </ul>
+    <div class="about">
+        <h2>Про наш проєкт</h2>
+        <p>Наш проєкт - це результат спільних зусиль професійних кулінарів та програмістів, які спрямовані на полегшення кулінарного бізнесу. Ми віримо у те, що добре організований сайт може значно підвищити ефективність та якість готування. Наша команда працює безперервно для того, щоб надати вам найкращі інструменти для досягнення вашого кулінарного успіху.</p>
+        <a href="#">Дізнатися більше</a>
     </div>
 </div>
+<footer>
+    <div class="footer">
+        <div class="contacts">
+            <h3>Recipes</h3>
+            <p>Адреса: вул. Центральна, 22</p>
+        </div>
+        <div class="links">
+            <a href="tel:+380336789073"><img src="D:\WEB LABS\lab4\images\phone.svg" alt="+380336789073"></a>
+            <a href="mailto:info@example.com"><img src="D:\WEB LABS\lab4\images\icons8-почта-48.png" alt="info@gmail.com"></a>
+            <a href="tg://resolve?domain=mkotlyarchuk"><img src="D:\WEB LABS\lab4\images\icons8-телеграмма-app.svg" alt="Telegram"></a>
+            <a href="https://api.whatsapp.com/send?phone=380335351784"><img src="D:\WEB LABS\lab4\images\icons8-whatsapp.svg" alt="Whatsapp"></a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

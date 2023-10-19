@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+.text {
+    font-family: 'Dela Gothic One', cursive;
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+    background: url(images/pexels-photo.webp);
+    font-size: 100px;
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s infinite linear;
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+.content {
+    padding: 20px;
+}
+
+.main {
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.news {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.news h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.news article {
+    margin-bottom: 30px;
+}
+
+.news article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.news article p {
+    font-size: 16px;
+}
+
+.news article a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.about {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.about h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 16px;
+}
+
+.about a {
+    text-decoration: none;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts {
+    margin-bottom: 20px;
+}
+
+.contacts h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links a img {
+    width: 48px;
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+.links p {
+    font-size: 16px;
+    margin: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    /* Ваші стилі для цього проміжку ширини екрану */
+    header {
+        padding: 20px 40px;
+        height: 200px;
+    }
+    nav ul li {
+        margin-right: 40px;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+    .main {
+        padding: 150px 0;
+    }
+    .main h1 {
+        font-size: 48px;
+    }
+    .main p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 10px 20px;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    nav ul li a {
+        font-size: 50px;
+    }
+    .main {
+        padding: 100px 0;
+    }
+    .main h1 {
+        font-size: 36px;
+    }
+    .main p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
